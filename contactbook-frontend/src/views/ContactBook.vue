@@ -20,7 +20,7 @@
                     <i class="fas fa-redo"></i> Làm mới
                 </button>
 
-                <button class="btn btn-sm btn-success" @click="goToAddContact">
+                <button class="btn btn-sm btn-success" @click="goToAddContact()">
                     <i class="fas fa-plus"></i> Thêm mới
                 </button>
                 <button
@@ -47,8 +47,8 @@
                     }"
                 >
                     <span class="mt-2 badge badge-warning">
-                    <i class="fas fa-edit"></i>Hiệu chỉnh</span
-                >
+                        <i class="fas fa-edit"></i>Hiệu chỉnh</span
+                    >
                 </router-link>
             </div>
         </div>
@@ -128,6 +128,7 @@ export default {
         },
         goToAddContact() {
             this.$router.push({ name: "contact.add" });
+            console.log('test');
         },
     },
     mounted() {
