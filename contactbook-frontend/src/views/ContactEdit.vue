@@ -22,7 +22,7 @@ export default {
     },
     data() {
         return {
-            contact: null,
+            contact: {},
             message: "",
         };
     },
